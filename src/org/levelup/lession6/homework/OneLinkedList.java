@@ -46,7 +46,6 @@ public class OneLinkedList {
         ListElement current = head;
         while (current.getNext()!=null){
             System.out.println(head);
-            //System.out.println(current.getValue());
             current = current.getNext();
         }
     }

@@ -36,14 +36,15 @@ public class Deck {
         }
 
     }
-    public void getAll(){
-        ListElement current = head;
-        while (current.getNext()!=null){
-            System.out.println(current.getValue());
-            current = current.getNext();
-        }
-    }
 
+    public void popBack(){
+        ListElement newTail = tail.getNext();
+        tail = newTail;
+    }
+    public void popFront(){
+        ListElement newHead = head.getNext();
+        head = newHead;
+    }
 
 }
 
